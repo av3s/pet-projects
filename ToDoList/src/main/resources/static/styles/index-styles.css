@@ -1,0 +1,329 @@
+body{    
+    margin:0;
+    font-family:sans-serif;
+    font-size: 16px;    
+    background: #FBE8A6; 
+    min-width: 620px;
+}
+
+.index{
+    width:100%;
+    max-width:900px;
+    min-width:inherit;
+    margin: 0 auto;
+}
+/* CONTENT 
+///////////////////////////////////////////////////*/
+
+.content-container{
+    //display:block;
+    height:100%;
+    box-sizing: border-box;
+    width:auto;
+    padding: 8px 15px 0px 15px;   
+    margin: 0 0 0 250px;    
+    max-width:inherit;
+    border-right:2px solid #bf4e1929;
+}
+.content{    
+    height:100%;
+    width:100%;    
+    margin:75px 0 0 0;
+}
+
+.content-controls{
+    position: fixed;
+    display: block;
+    width: 250px;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #FBE8A6;
+    border-right: 2px solid #bf4e1929; 
+    border-left: 2px solid #bf4e1929;      
+    color: #FFFFCC;
+    margin: 0 7px 0 0;
+    padding: 10px 7px 0 7px;
+}
+
+.content-controls-block{
+   
+    display:block;
+    position:relative;
+    box-sizing: border-box;
+    margin: 0 0 15px 0;
+}
+
+#controlsIconsBlock{
+    display: flex;
+    position:relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-controls-flex{
+    display:flex;
+    align-items: center;
+}
+
+#taskControls{
+    opacity: 0;
+}
+
+.control-icon{
+    border: 2px solid #782e00;
+    margin: 3px 5px 3px 0;
+    box-sizing: border-box;
+    padding: 2px;
+    border-radius:3px;
+    height: 38px;
+}
+
+.content-controls-flex > .control-icon:last-child{
+    margin-right: 0;
+}
+
+.control-icon:hover{
+    background:#ffffcc;
+}
+
+#taskInfo{
+    position:relative;
+    display:block;
+    border-top:2px solid #bf4e1929;
+    opacity:0;
+} 
+  
+.ti-prop{    
+    display: block;
+    box-sizing: border-box;
+    color:#63270d;
+    margin: 10px 0 0;
+    
+}
+
+
+.ti-prop label{
+    box-sizing: border-box;
+    border: none;
+    background: inherit;
+    margin: 0px; 
+    padding: 0px;
+    outline: none;
+    font-family: inherit;
+    font-size:16px;
+}
+
+.ti-prop > label{
+    font-weight: bold;
+}
+
+.ti-prop-date{
+    height: 20px;
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center; 
+    font-size:14px;
+    border: none;
+    border-bottom: 1px solid #bf4e1950;
+    
+    
+}
+
+.ti-prop-date:last-child{
+    border-bottom: none;
+}
+
+.ti-prop-date > label{
+
+}
+
+#tiDates{
+    border: 1px solid #bf4e1950;
+    border-top: none;
+    border-left: none;
+    padding: 0 6px 0 0;
+}
+
+
+.ti-prop textarea{
+    background: transparent;
+    box-sizing: border-box;
+   // margin: 0 0 10px 0;
+    pedding:3px;
+    font-family: inherit;
+    color: inherit;
+    outline: none;
+    border: 1px solid #bf4e1950;
+    border-top: none;
+    border-left: none;
+    font-size:16px;
+    width: 100%;
+    resize: none;
+    height:120px;
+}
+
+#tiDesc-area{
+    height:200px;
+    text-align: justify;
+}
+
+.content-container-task-box, 
+.content-container-task-box-cl{
+    box-sizing: inherit;
+    display: flex;
+    height:32px;
+    width:100%;
+    margin:7px auto 0;
+    padding:3px 10px 3px 10px;
+    background-color:rgba(251, 112, 47, 0.2);
+    color:#63270d;
+    border: 1px solid #ed9f7d;
+    border-radius: 8px;
+    border-bottom: 2px solid #ed9f7d;
+    border-left: 3px solid #ed9f7d;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.content-container-task-box-cl{
+    background-color: #c43e0099;
+    border-color: #974421;
+    
+}
+.content-container-task-box > p,
+.content-container-task-box-cl > p{
+    color : #63270d;
+    display: inline;
+    max-width: 600px;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin:0 0 0 5px;
+}
+.content-container-task-box > p{
+    color : #63270d;
+}
+.content-container-task-box-cl > p{
+    color : #ffffcc;
+}
+
+
+
+.content-container-task-box:hover,
+.content-container-task-box-cl:hover{
+    cursor: pointer;
+}
+
+/* HEADER 
+///////////////////////////////////////////////////*/
+
+@font-face {
+    font-family: 'nice-font';
+    src: local('Open Sans'),
+    url('../fonts/DancingScript-Bold.ttf');
+}
+
+.index__header{
+    display:flex;
+    position:fixed;
+    top: 0px;
+    box-sizing: border-box;
+    background-color: rgba(196, 62, 0, 0.6);
+    height:75px;
+    width:inherit;
+    max-width:inherit;
+    min-width:inherit;
+    justify-content:space-between;
+    border-bottom: 2px solid #bf4e19;
+    border-radius: 15px 15px 15px 0;  
+    align-items: center;
+    color: #FFFFCC;
+}
+
+.index__logo{
+    position:relative;
+    float:left;
+    display:inherit;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.index__logo-img,
+.index__logo-text{
+    display:inline-block ;    
+    margin:auto 0 auto 10px;
+    padding:0;
+
+}
+
+.index__logo-text{
+    font-family: 'nice-font';
+    font-size:50px;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.index__controls{
+    position:relative;
+    float:right;
+    display:inherit;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.index__controls > button{
+    display:inherit ;
+    position:relative;
+    text-align:center;
+    box-sizing:border-box;
+    margin: 0 10px 0 0;
+    height: 50px;  
+    width:50px;  
+    color:#FBE8A6; 
+    background-color: #ac3d09;
+    border:none;
+    border-left: 2px solid #FBE8A6; 
+    border-bottom: 2px solid #FBE8A6;
+    border-radius:15px;
+    align-items: center;
+    text-align: center;
+  }
+  #index__testButton{
+    min-width: 40px;
+    width:160px;
+    height: 40px; 
+    font-size: 2rem;
+    font-family: 'nice-font';
+    appearance: none;
+  border: 0;
+  border-radius: 15px;
+  background: #1d49aa;
+  color: #fff;
+  padding: 8px 16px;
+  white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  //font-size: 16px;
+  }
+  #index__testButton:hover {
+    background: #4676D7;
+  }
+  
+  #index__testButton:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #cbd6ee;
+  }
+
+.index__controls button:hover  {
+    cursor:pointer;    
+    opacity:0.9;
+  }
+
+.index__controls button:active  {
+    border: 1px solid #FBE8A6;     
+  }
+
+  

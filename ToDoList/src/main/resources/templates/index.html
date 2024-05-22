@@ -1,0 +1,104 @@
+<!Doctype html >
+<html>
+  <head>
+    <title>Vsl's To Do List</title>
+    <meta charset="utf-8">
+    <link href="/fonts/DancingScript-Bold.ttf" as="font">
+    <link rel="stylesheet" href="/styles/add-form-style.css">
+    <link rel="stylesheet" href="/styles/index-styles.css">
+  </head>
+  <body>
+    <div class="index">
+      <header class="index__header" >
+        <div class="index__logo">
+          <div class="index__logo-img">
+            <img id="logo" src="/images/todologo3.png" alt="To Do Logo" height="45" onclick = logoClick()>
+          </div>
+          <div class="index__logo-text">Don't forget to do it</div>
+        </div>        
+        <div class="index__controls">
+          <button type="button" id="index__testButton" >today tasks</button>
+        </div>
+      </header>
+      <div class="content">
+        <div class="content-controls">
+          <div class="content-controls-block" id="controlsIconsBlock">
+            <div class="content-controls-flex" id="generalControls">
+              <img src="/images/icons/add-50.png" alt="ADD" id="add_task_control" class="control-icon">
+              <img src="/images/icons/refresh-50.png" alt="REFRASH" class="control-icon">
+            </div>
+            <div class="content-controls-flex" id="taskControls" hidden="true">
+              <img src="/images/icons/edit-50.png" alt="EDIT" id="edit_task_control" class="control-icon">
+              <img src="/images/icons/del-50.png" alt="DEL" id="del_task_control" class="control-icon">
+              <img src="/images/icons/save-50.png" alt="SAVE" class="control-icon">
+            </div>
+          </div>
+          <div class="content-controls-block" id="taskInfo" hidden="true">
+            <div class="ti-prop" id="ti-idAndPrio">
+            </div>
+            <div id="tiTitle" class="ti-prop">
+              <label for="tiTitle-area" id="tiId" ></label>
+              <textarea name="tiTitle-text" id="tiTitle-area" disabled ></textarea>
+            </div>
+            <div id="tiDates" class="ti-prop">
+              <span class = "ti-prop-date">
+                <label for="tiCreationDate">Creation date:</label>
+                <time name="tiTimeCreation" id="tiCreationDate"  datetime=""></time>
+              </span>
+              <span class="ti-prop-date">
+                <label for="tiPerformDate">Perform date:</label>
+                <time name="tiTimePerform" id="tiPerformDate"  datetime=""></time>
+              </span>
+              <span class="ti-prop-date">
+                <label for="tiUpdateDate">Last update:</label>
+                <time name="tiTimeUpdate" id="tiUpdateDate"  datetime=""></time>
+              </span>
+            </div>  
+            <div id="tiDesc" class="ti-prop">
+              <label for="tiDesc-area" >Описание: </label>
+              <textarea name="tiDesc-text" id="tiDesc-area" disabled></textarea>
+            </div>
+          </div>
+        </div>
+        <div id="content-box" class="content-container">
+        </div>
+        <div id="content-box-ch" class="content-container">
+        </div>
+      </div>
+    </div>
+    <div class="form-addTask" id = "addPanel" hidden="true">
+      <form action="" aria-disabled="true">
+        <header class="form-head">
+          <h2 id="form-addTask-headTask"></h2> 
+          <div class="form-addTask-performDate">
+            <label for="perform" >Дата исполнения: </label>
+            <input type="date" id="perform">
+          </div>     
+        </header>
+        <div class="form-addTask-group">
+          <label for="title">Задача: </label>
+          <input type="text" name="title" id="title">
+        </div>
+          <div class="form-additional-group">
+              <label for="description" >Описание: </label>
+              <textarea name="desc" id="description" ></textarea>                      
+          </div>
+        <footer class="form-footer">
+          <div class="form-buttons">
+            <div class= "form-btn" id="add-task">
+              <button id="addTask__addBtn" type="button"  >
+                Сохранить
+              </button>
+            </div>
+            <div class= form-btn id="close">
+              <button type="button" id="addTask__closeBtn">
+                Закрыть
+              </button>
+            </div>
+          </div>
+        </footer>
+      </form>
+    </div>
+    <script src="/scripts/tasks.js" type="text/javascript"></script>
+  </body>
+</html>

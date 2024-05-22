@@ -1,0 +1,145 @@
+
+.form-addTask{
+    
+    position: fixed;
+    top:0;
+    left:0;
+    margin:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+}
+.form-addTask form{
+    margin:0 auto;    
+    transform:translate(0%,25%); 
+    background-color:#FB702F;
+    width:500px;    
+    border: 1px;    
+    padding: 10px 30px 30px 30px;
+    color: #3f2512;
+    border-radius:10px;
+    margin:0 auto;
+}
+
+.form-addTask > div{   
+    margin: 0px 0 0 0;
+}
+
+.form-head{
+    display:flex;
+    justify-content:space-between;    
+}
+
+.form-addTask-group {    
+    color: #FFFFCC;
+    font-family: inherit;
+    margin: 10px 0 0 0;
+}
+
+.form-addTask-group label,
+.form-additional-group label,
+.form-addTask-performDate label{
+   
+    display: block;
+    font-size:14px;
+    color: #FBE8A6;
+    font-family:Tahoma sans-serif;    
+}
+
+.form-addTask-group input{
+    box-sizing: border-box;
+    width: 100%;    
+    border: none;
+    background: inherit;
+    border-bottom: 1px solid #FBE8A6; 
+    border-radius: 5px;   
+    outline: none;
+    color: #000;
+    font-family: inherit;
+    font-size: 16px;
+}
+.form-addTask-group > #title,
+.form-addTask-performDate > input {
+    margin: 10px 0 20px 0px;
+}
+.form-addTask-performDate > input{
+    
+}
+
+//<span class="validity"></span>
+.form-additional-group{
+    padding:0;
+    box-sizing:border-box;
+    width: 100%;    
+    border: none;
+    background: transparent;
+    border: none;  
+}
+
+.form-additional-group > textarea{
+    background: transparent;
+    box-sizing: border-box;
+    margin: 10px 0 30px 0px;
+    padding: 0 0 0 15px;
+    font-family: inherit;
+    color: inherit;
+    outline: none;
+    border: none;
+    border-left: 1px solid #FBE8A6; 
+    border-bottom: 1px solid #FBE8A6;
+    border-radius: 10px;
+    width: 100%;
+    resize: none;
+    height: 150px;
+    placeholder: "Подсказка внутри textarea";
+}
+
+.form-footer{
+    box-sizing: border-box;
+    width:100%;
+    display:flex;
+    justify-content: right;  
+    padding:0;
+    margin:0; 
+    color:inherit;
+}    
+.form-buttons{
+    display:flex;
+    width:100%;    
+    justify-content: space-around;
+    position:relative;
+    float:right;
+    box-sizing:inherit;
+}
+.form-btn{
+    width:50%;
+    display:inherit;
+    justify-content: right; 
+}
+
+.form-buttons button{
+    text-align:center;
+    box-sizing:border-box;
+    width:90%;
+    height: 30px;    
+    padding:5px 0 0 0;
+    margin:0; 
+    color:#FBE8A6; 
+    background-color: #ac3d09;
+    border:none;
+    border-left: 2px solid #FBE8A6; 
+    border-bottom: 2px solid #FBE8A6;
+    border-radius:15px;
+  }
+
+  .form-buttons button:hover
+  {
+    cursor:pointer;    
+    opacity:0.9;
+  }
+
+  .form-buttons button:active
+  {    
+    border: 1px solid #FBE8A6;     
+  }
+  
